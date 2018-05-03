@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 30px;
+}
+
+.string {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 10px;
+}
+
+#location, #time, #map, #list {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+#location, #map {
+  flex-basis: 74%;
+}
+
+#time, #list {
+  flex-basis: 25%;
+}
+
+#map, #list {
+  height: 500px;
+  padding: 0;
+}
+
+
+#people .man {
+  margin: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+}
+
+#people .man img {
+  display: inline-block;
+  width: 30px;
+  margin: 8px 16px 8px 8px;
+}
+
+.total {
+  border-top: 1px solid black;
+  padding: 8px 0;
+  text-align: center;
+}

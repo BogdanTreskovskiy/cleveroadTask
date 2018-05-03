@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  
+ 
+  <div class="string">
+    <div id="location">
+      <b>ISS is now located at:</b> 
+      <br/>
+
+      <span>longitude: </span>
+      <span id="long">0</span>
+
+      <span>latitude: </span>
+      <span id="lat">0</span>
+    </div>
+
+    <div id="time">
+      <b>Current UTC time: </b>
+      <span id="t"></span>
+
+      <br />
+
+      <span id="date"></span>
+    </div>
+  </div>
+
+  <div class="string">
+    <div id="map"></div>
+    <div id="list">
+      <div id="people">
+        <div class="man">
+          <img src="./icon.png" alt="icon">
+          <span>Bogdan Treskovskiy</span>
+        </div>
+      </div>
+      <div class="total">
+        Total amount: 
+        <span id="total"></span> 
+        people on ISS 
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./index.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu8zAl2Pw8sTjE2sLsKc2ntuFD_jT-K88&callback=initMap">
+  </script>
+</body>
+</html>
